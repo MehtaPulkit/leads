@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Custom text selection color */
+::selection {
+  background-color: #ef078d; /* HayesWinckle pink with 30% opacity */
+  color: #ffffff; /* Dark gray for better readability */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: #ef078d; /* HayesWinckle pink with 30% opacity */
+  color: #ffffff; /* Dark gray for better readability */
+}
