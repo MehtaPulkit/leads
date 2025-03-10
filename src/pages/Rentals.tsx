@@ -20,13 +20,13 @@ const Rentals = () => {
             className="w-20 md:w-28 h-full object-contain drop-shadow-2xl z-50 transform rotate-[-12deg] hover:rotate-0 hover:scale-110 transition-all duration-300"
           />
           <h1 className="text-4xl font-bold text-center text-white mb-6 [text-shadow:_0_2px_4px_rgb(43_43_54/_0.8)]">
-            Looking to find out your property’s true value?
+            Unlock Your Investment’s Rental Potential
           </h1>
         </div>
 
         <p className="text-center text-white mb-12 max-w-2xl mx-auto [text-shadow:_0_2px_4px_rgb(43_43_54/_0.8)]">
-          Get a free rental appraisal with your local Hayeswinckle property
-          manager to make sure to maximise rental returns.
+          Get a <b>Free Rental Appraisal</b> with your local Hayeswinckle
+          property manager to make sure to maximise rental returns.
         </p>
         <div className="max-w-4xl mx-auto">
           <RentalForm />
