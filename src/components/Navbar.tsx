@@ -89,71 +89,75 @@ const Navbar = () => {
             </label>
 
             {/* Mobile menu button */}
-            <div className="sm:hidden flex items-center">
-              <button
-                type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                {/* Icon when menu is closed */}
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
+            {!isChecked && (
+              <div className="sm:hidden flex items-center">
+                <button
+                  type="button"
+                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
+                  <span className="sr-only">Open main menu</span>
+                  {/* Icon when menu is closed */}
+                  <svg
+                    className="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
 
       {/* Mobile menu */}
-      <div className="sm:hidden" id="mobile-menu">
-        <div className="pt-2 pb-3 space-y-1">
-          <Link
-            to="/"
-            className={`block pl-3 pr-4 py-2 text-base font-medium ${
-              isActive("/")
-                ? "bg-pink-50 border-l-4 border-pink-500 text-pink-500"
-                : "border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
-            }`}
-          >
-            Home
-          </Link>
-          <Link
-            to="/property-appraisal"
-            className={`block pl-3 pr-4 py-2 text-base font-medium ${
-              isActive("/property-appraisal")
-                ? "bg-pink-50 border-l-4 border-pink-500 text-pink-500"
-                : "border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
-            }`}
-          >
-            Property Appraisal
-          </Link>
-          <Link
-            to="/rental-appraisal"
-            className={`block pl-3 pr-4 py-2 text-base font-medium ${
-              isActive("/rental-appraisal")
-                ? "bg-pink-50 border-l-4 border-pink-500 text-pink-500"
-                : "border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
-            }`}
-          >
-            Rental Appraisal
-          </Link>
+      {!isChecked && (
+        <div className="sm:hidden" id="mobile-menu">
+          <div className="pt-2 pb-3 space-y-1">
+            <Link
+              to="/"
+              className={`block pl-3 pr-4 py-2 text-base font-medium ${
+                isActive("/")
+                  ? "bg-pink-50 border-l-4 border-pink-500 text-pink-500"
+                  : "border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              to="/property-appraisal"
+              className={`block pl-3 pr-4 py-2 text-base font-medium ${
+                isActive("/property-appraisal")
+                  ? "bg-pink-50 border-l-4 border-pink-500 text-pink-500"
+                  : "border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+              }`}
+            >
+              Property Appraisal
+            </Link>
+            <Link
+              to="/rental-appraisal"
+              className={`block pl-3 pr-4 py-2 text-base font-medium ${
+                isActive("/rental-appraisal")
+                  ? "bg-pink-50 border-l-4 border-pink-500 text-pink-500"
+                  : "border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+              }`}
+            >
+              Rental Appraisal
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
