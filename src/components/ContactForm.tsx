@@ -28,7 +28,7 @@ const schema = object().shape({
   phone: string()
     .matches(
       /^04[0-9]{8}$/,
-      "Please enter a valid Australian mobile number (starting with 04)"
+      "Please enter a valid Australian mobile number starting with 04"
     )
     .required("Phone is required"),
   propertyType: string()
