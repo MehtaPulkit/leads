@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import house from "../assets/house.jpg";
 const Home = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const Home = () => {
         <div
           className="absolute inset-0 flex flex-col items-center justify-center text-white bg-gray-900 [text-shadow:_0_2px_4px_rgb(43_43_54/_0.8)]"
           style={{
-            backgroundImage: 'url("/src/assets/house.jpg',
+            backgroundImage: `url(${house})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import hwWhite from "../assets/hw-logo.png";
 
 export const Footer = () => {
   return (
@@ -66,7 +67,7 @@ export const Footer = () => {
           <div className="mt-4 md:mt-0">
             <Link to="/" className="block">
               <img
-                src="/src/assets/hw-logo.png"
+                src={hwWhite}
                 alt="HayesWinckle"
                 className="max-w-[200px] h-auto"
               />

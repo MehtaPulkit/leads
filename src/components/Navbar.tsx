@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import hwBlack from "../assets/hw-logo-b.jpg";
 
 const Navbar = () => {
   const location = useLocation();
@@ -21,11 +22,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link to="/">
-                <img
-                  className="h-12 w-auto"
-                  src="/src/assets/hw-logo-b.jpg"
-                  alt="HayesWinckle"
-                />
+                <img className="h-12 w-auto" src={hwBlack} alt="HayesWinckle" />
               </Link>
             </div>
 

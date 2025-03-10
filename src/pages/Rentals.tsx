@@ -1,12 +1,13 @@
 import RentalForm from "../components/RentalForm";
-
+import free from "../assets/free.png";
+import house from "../assets/house.jpg";
 const Rentals = () => {
   return (
     <div className="min-h-screen bg-white py-16 relative">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("/src/assets/house.jpg',
+          backgroundImage: `url(${house})`,
           filter: "brightness(0.7)",
         }}
       ></div>
@@ -14,7 +15,7 @@ const Rentals = () => {
         {/* Free Badge */}
         <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-2">
           <img
-            src="/src/assets/free.png"
+            src={free}
             alt="Free Service"
             className="w-20 md:w-28 h-full object-contain drop-shadow-2xl z-50 transform rotate-[-12deg] hover:rotate-0 hover:scale-110 transition-all duration-300"
           />
