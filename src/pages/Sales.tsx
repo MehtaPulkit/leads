@@ -1,6 +1,5 @@
 import ContactForm from "../components/ContactForm";
 import house from "../assets/house-2.jpg";
-import free from "../assets/free.png";
 const Sales = () => {
   return (
     <div className="min-h-screen py-16 relative">
@@ -12,25 +11,19 @@ const Sales = () => {
         }}
       ></div>
       <div className="relative container mx-auto px-4">
-        {/* Free Badge */}
-        <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-2">
-          <img
-            src={free}
-            alt="Free Service"
-            className="w-20 md:w-28 h-full object-contain drop-shadow-2xl z-50 transform rotate-[-12deg] hover:rotate-0 hover:scale-110 transition-all duration-300"
-          />
+        <div>
           <h1 className="text-4xl font-bold text-center text-white mb-6 [text-shadow:_0_2px_4px_rgb(43_43_54/_0.8)]">
             Looking to find out your property’s value in today's Market?
           </h1>
+          <p className="text-center text-white mb-12 max-w-2xl mx-auto [text-shadow:_0_2px_4px_rgb(43_43_54/_0.8)]">
+            Get a <b>Free Property Appraisal </b>
+            <br />
+            Looking to sell or just curious about your home’s value? Our expert
+            team will provide you with a precise market assessment and strategic
+            insights to help you maximize your property’s potential.
+          </p>
         </div>
 
-        <p className="text-center text-white mb-12 max-w-2xl mx-auto [text-shadow:_0_2px_4px_rgb(43_43_54/_0.8)]">
-          Get a <b>Free Property Appraisal </b>
-          <br />
-          Looking to sell or just curious about your home’s value? Our expert
-          team will provide you with a precise market assessment and strategic
-          insights to help you maximize your property’s potential.
-        </p>
         <div className="max-w-4xl mx-auto">
           <ContactForm formType="sales" />
         </div>
