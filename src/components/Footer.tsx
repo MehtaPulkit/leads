@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import hwWhite from "../assets/hw-logo.png";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="site-footer bg-gray-900 text-white">
       {/* Footer Top */}
@@ -80,7 +82,7 @@ export const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6">
           <div className="text-sm text-gray-400 flex flex-wrap items-center justify-center gap-2">
-            <span>Copyright © 2025 HayesWinckle</span>
+            <span>Copyright © {currentYear} HayesWinckle</span>
             <span className="hidden sm:inline">|</span>
             <span>All rights reserved</span>
             <span className="hidden sm:inline">|</span>
